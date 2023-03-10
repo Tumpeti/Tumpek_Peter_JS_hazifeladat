@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    background-color: rgb(207, 179, 179);
+  }
+  
+  
+  main {
+    max-width: 80%;
+    border: 3px inset rgb(227, 81, 81);
+    margin: auto;
+    background-color: black;
+  }
+  .flexbox1 {
+    display: flex;
+    gap: 5px;
+    flex: wrap;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+  img {
+    flex: 1 1 auto;
+    height: 350px;
+    max-width: 100%;
+  }
+  @media screen and (max-width: 800px) {
+    .flexbox1 {
+      flex-direction: column;
+    }
+    img{
+      max-width: 90%;
+    }
+    
+    .flexbox1 div {
+      margin: 5px 0;
+    }
+  }
+  
